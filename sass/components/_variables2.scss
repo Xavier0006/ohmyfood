@@ -1,4 +1,5 @@
 $direction: flex-direction;
+$wrap: flex-wrap;
 
 
 @mixin flex() {
@@ -7,7 +8,8 @@ $direction: flex-direction;
     flex-direction: $direction;
 
 
-    @if $direction = row {
+    @if $direction =row {
+
         &xCenter {
             justify-content: center;
         }
@@ -24,6 +26,54 @@ $direction: flex-direction;
             justify-content: space-evenly;
         }
 
-        
+        &yCenter {
+            align-items: center;
+        }
+    }
+
+    @if $direction =column {
+
+        &xCenter {
+            justify-content: center;
+        }
+
+        &xSpaceBetween {
+            justify-content: space-between;
+        }
+
+        &xSpaceAround {
+            justify-content: space-around;
+        }
+
+        &xSpaceEvenly {
+            justify-content: space-evenly;
+        }
+
+        &yCenter {
+            align-items: center;
+        }
+    }
+
+    @if $flex-wrap =wrap {
+
+        &xCenter {
+            justify-content: center;
+        }
+
+        &xSpaceBetween {
+            justify-content: space-between;
+        }
+
+        &xSpaceAround {
+            justify-content: space-around;
+        }
+
+        &xSpaceEvenly {
+            justify-content: space-evenly;
+        }
+
+        &yCenter {
+            align-items: center;
+        }
     }
 }
