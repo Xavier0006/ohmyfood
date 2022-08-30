@@ -1,0 +1,26 @@
+@mixin flex() {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+
+
+    @if $direction = row {
+        &xCenter {
+            justify-content: center;
+        }
+
+        &xSpaceBetween {
+            justify-content: space-between;
+        }
+
+        &xSpaceAround {
+            justify-content: space-around;
+        }
+
+        &xSpaceEvenly {
+            justify-content: space-evenly;
+        }
+
+        
+    }
+}

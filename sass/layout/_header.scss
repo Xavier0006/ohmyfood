@@ -1,0 +1,22 @@
+@import "../components/variables";
+
+header {
+    @include flexwrap();
+        .title {
+            @include flexwrap();
+            @include borderbottom;
+            .logo {
+                width: 50%;
+                padding: 3% 0% 3% 0%;
+            }
+        }
+
+    .localisation {
+        @include flexwrap();
+        background-color: rgb(211, 211, 211);
+        gap: 5%;
+        @include borderbottom;
+    }
+}
+    
+

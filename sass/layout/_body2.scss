@@ -1,0 +1,22 @@
+@import "../components/variables";
+
+.fonctionnement-wrap {
+    @include flexwrap();
+    gap: 30%;
+    margin-bottom: 5%;
+        .title-fonctionnement {
+            @include flexwrap();
+        }
+
+        .liste-fonctionnement {
+            @include flexwrap();
+            gap: 10%;
+            row-gap: 15px;
+            .liste {
+                @include flexwrap();
+                border-style: none;
+                border-radius: 15px;
+                background-color:rgb(243, 243, 243);
+            }
+        }
+}

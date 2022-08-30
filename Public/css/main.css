@@ -1,0 +1,141 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+header .title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom-style: solid;
+}
+header .title .logo {
+  width: 50%;
+  padding: 3% 0% 3% 0%;
+}
+header .localisation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 211, 211);
+  gap: 5%;
+  border-bottom-style: solid;
+}
+
+.Reserve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 10%;
+}
+.Reserve .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Reserve .menu h2 {
+  text-align: center;
+  padding: 5% 20% 0% 20%;
+}
+.Reserve .description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Reserve .description p {
+  text-align: center;
+  padding: 0% 10% 3% 10%;
+}
+.Reserve .explorer {
+  border-style: none;
+  border-radius: 15px;
+  background-color: #FF79DA;
+  height: 50px;
+  width: 60%;
+  color: white;
+  cursor: pointer;
+}
+
+.fonctionnement-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+  margin-bottom: 5%;
+}
+.fonctionnement-wrap .title-fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.fonctionnement-wrap .liste-fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  row-gap: 15px;
+}
+.fonctionnement-wrap .liste-fonctionnement .liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 15px;
+  background-color: rgb(243, 243, 243);
+}
+
+.article {
+  display: block;
+  background-color: rgb(243, 243, 243);
+}
+.article .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.article .cards-wrapper .restaurants-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article .cards-restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 1rem;
+}
+.article .cards-restaurants .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  background-color: white;
+}
+.article .cards-restaurants .cards .photos {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  margin: auto;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */

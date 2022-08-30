@@ -1,0 +1,12 @@
+@import "./sass/layout/header";
+@import "./sass/components/variables";
+@import "./sass/layout/body1";
+@import "./sass/layout/body2";
+@import "./sass/layout/body3";
+@import "./sass/layout/footer";
+
+html {
+    margin: auto;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}

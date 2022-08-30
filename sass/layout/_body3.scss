@@ -1,0 +1,36 @@
+@import "../components/variables";
+
+.article {
+    display: block;
+    background-color: rgb(243, 243, 243);
+
+    .cards-wrapper {
+        @include flexwrap();
+
+        .restaurants-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .cards-restaurants {
+        @include flexwrap();
+        width: 100%;
+        row-gap: 1rem;
+
+        .cards {
+            @include flexwrap();
+            gap: 5%;
+            background-color: white;
+
+            .photos {
+                @include cover();
+            }
+
+            
+        }
+    }
+
+}
