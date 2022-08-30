@@ -76,4 +76,27 @@ $wrap: flex-wrap;
             align-items: center;
         }
     }
+
+    @if $flex-wrap =nowrap {
+
+        &xCenter {
+            justify-content: center;
+        }
+
+        &xSpaceBetween {
+            justify-content: space-between;
+        }
+
+        &xSpaceAround {
+            justify-content: space-around;
+        }
+
+        &xSpaceEvenly {
+            justify-content: space-evenly;
+        }
+
+        &yCenter {
+            align-items: center;
+        }
+    }
 }
