@@ -1,3 +1,6 @@
+$direction: flex-direction;
+
+
 @mixin flex() {
     display: flex;
     flex-wrap: $wrap;
