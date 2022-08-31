@@ -27,9 +27,23 @@
 
             .photos {
                 @include cover();
+                padding-bottom: 5%;
             }
 
+            .typo {
+                @include flexwrap();
+                gap: 15%;
+                row-gap: 10px;
+            }
             
+            h5 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+
         }
     }
 
