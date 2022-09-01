@@ -148,6 +148,28 @@ header .localisation {
   margin: 0;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .logo-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .logo-footer img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
 html {
   margin: auto;
   scroll-behavior: smooth;

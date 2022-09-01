@@ -1,2 +1,30 @@
 @import "../components/variables";
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    .logo-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 30%;
+            margin-top: 20%;
+            margin-bottom: 10%;
+        }
+
+    }
+
+    
+
+}
