@@ -1,8 +1,4 @@
-$direction: flex-direction;
-$wrap: flex-wrap;
-
-
-@mixin flex() {
+@mixin flex($direction, $wrap) {
     display: flex;
     flex-wrap: $wrap;
     flex-direction: $direction;
