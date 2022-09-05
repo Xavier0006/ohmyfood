@@ -4,6 +4,7 @@
     @include flexwrap();
     gap: 30%;
     margin-bottom: 5%;
+
         .title-fonctionnement {
             @include flexwrap();
         }
@@ -17,6 +18,8 @@
                 border-style: none;
                 border-radius: 15px;
                 background-color:rgb(243, 243, 243);
+                width: 90%;
+                gap: 10%;
             }
         }
 }

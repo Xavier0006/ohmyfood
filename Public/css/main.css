@@ -94,6 +94,8 @@ header .localisation {
   border-style: none;
   border-radius: 15px;
   background-color: rgb(243, 243, 243);
+  width: 90%;
+  gap: 10%;
 }
 
 .article {
@@ -118,6 +120,7 @@ header .localisation {
   align-items: center;
   width: 100%;
   row-gap: 1rem;
+  padding-bottom: 10%;
 }
 .article .cards-restaurants .cards {
   display: flex;
@@ -126,18 +129,21 @@ header .localisation {
   align-items: center;
   gap: 5%;
   background-color: white;
+  border-radius: 5%;
 }
 .article .cards-restaurants .cards .photos {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 5%;
+  width: 300px;
+  height: 130px;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 .article .cards-restaurants .cards .typo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  justify-content: left;
   gap: 15%;
   row-gap: 10px;
 }
@@ -154,20 +160,11 @@ header .localisation {
   justify-content: space-between;
   align-items: flex-start;
 }
-.footer .logo-footer {
+.footer .titre-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.footer .logo-footer img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-  margin-top: 20%;
-  margin-bottom: 10%;
 }
 
 html {

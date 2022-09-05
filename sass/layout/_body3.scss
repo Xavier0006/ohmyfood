@@ -19,19 +19,23 @@
         @include flexwrap();
         width: 100%;
         row-gap: 1rem;
+        padding-bottom: 10%;
 
         .cards {
             @include flexwrap();
             gap: 5%;
             background-color: white;
+            border-radius: 5%;
 
             .photos {
                 @include cover();
-                padding-bottom: 5%;
+                padding-bottom: 10px;
+                border-radius: 10px;
             }
 
             .typo {
                 @include flexwrap();
+                justify-content: left;
                 gap: 15%;
                 row-gap: 10px;
             }
