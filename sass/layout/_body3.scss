@@ -20,6 +20,7 @@
         width: 100%;
         row-gap: 1rem;
         padding-bottom: 10%;
+        justify-content: space-evenly;
 
         .cards {
             @include flexwrap();
