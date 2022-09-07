@@ -1,16 +1,38 @@
 @import "../components/variables";
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+footer {
+    @include blockcolumn();
+    
+    .footer {
+        @include blockcolumn();
 
-    .titre-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        .titre-footer {
+            @include blockcolumn();
+        }
+    }
+
+    .liste-footer {
+        @include flexrow();
+
+        .end {
+            @include blockcolumn();
+
+            .li-1 {
+                @include flexrowstart();
+            }
+
+            .li-2 {
+                @include flexrowstart();
+            }
+
+            .li-3 {
+                @include flexrowstart();
+            }
+
+            .li-4 {
+                @include flexrowstart();
+            }
+        }
     }
 
 }

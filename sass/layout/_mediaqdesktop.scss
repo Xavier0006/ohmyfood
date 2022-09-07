@@ -1,0 +1,16 @@
+@import "../components/variables";
+
+@media all and (min-width: 1920px) {
+
+    body {
+        width: 100%;
+
+        header {
+            .localisation {
+                margin-bottom: 5%;
+                min-width: 1920px;
+                gap: 2%;
+            }
+        }
+    }
+}
