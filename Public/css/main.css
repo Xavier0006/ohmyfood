@@ -66,6 +66,7 @@ body {
   width: 60%;
   color: white;
   cursor: pointer;
+  max-width: 380px;
 }
 
 .fonctionnement-wrap {

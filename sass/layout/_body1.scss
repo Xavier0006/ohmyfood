@@ -26,5 +26,6 @@ body {
 
         .explorer {
             @include primarybtn();
+            max-width: 380px;
         }
 }
