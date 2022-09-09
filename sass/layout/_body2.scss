@@ -4,9 +4,11 @@
     @include flexwrap();
     gap: 30%;
     margin-bottom: 20%;
+    justify-content: flex-start;
 
         .title-fonctionnement {
             @include flexwrap();
+            padding-left: 8%;
         }
 
         .liste-fonctionnement {
@@ -21,6 +23,21 @@
                 width: 90%;
                 gap: 10%;
                 box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
+
+                    .numero {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 20px;
+                        border-style: none;
+                        border-radius: 50%;
+                        background-color: #9356dc;
+                        color: white;
+                    }
+
+                    i {
+                        color: lightgrey;
+                    }
             }
         }
 }

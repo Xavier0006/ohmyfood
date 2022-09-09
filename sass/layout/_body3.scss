@@ -6,11 +6,14 @@
 
     .cards-wrapper {
         @include flexwrap();
+        justify-content: flex-start;
 
         .restaurants-title {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 10%;
+            padding-left: 8%;
         }
 
     }

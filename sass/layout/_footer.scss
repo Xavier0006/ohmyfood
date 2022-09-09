@@ -2,12 +2,20 @@
 
 footer {
     @include blockcolumn();
+    background-color: rgba(14, 11, 11, 0.753);
+    color: white;
+
     
     .footer {
         @include blockcolumn();
 
         .titre-footer {
             @include blockcolumn();
+            padding-left: 8%;
+            
+            h5 {
+                margin: 0;
+            }
         }
     }
 
