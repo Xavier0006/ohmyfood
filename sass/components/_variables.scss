@@ -6,13 +6,15 @@
 }
 
 @mixin borderbottom() {
-    border-bottom-style: solid;
+    border-bottom-style: none;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 10%), 0 8px 8px rgb(0 0 0 / 10%), 0 16px 16px rgb(0 0 0 / 10%);
 }
 
 @mixin primarybtn() {
     border-style: none;
-    border-radius: 15px;
-    background-color: #FF79DA;
+    border-radius: 25px;
+    background: rgb(255, 121, 218);
+    background: linear-gradient(149deg, rgba(255, 121, 218, 1) 15%, rgba(147, 86, 220, 1) 62%);
     height: 50px;
     width: 60%;
     color: white;

@@ -19,10 +19,17 @@ footer {
 
             .li-1 {
                 @include flexrowstart();
+                
+                i {
+                    padding-right: 10px;
+                }
             }
 
             .li-2 {
                 @include flexrowstart();
+                i {
+                    padding-right: 10px;
+                }
             }
 
             .li-3 {
