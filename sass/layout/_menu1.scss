@@ -10,3 +10,12 @@ header {
             }
         }
     }
+
+    .accueil {
+        @include flexwrap();
+        
+        .photoacc {
+            @include cover();
+            height: 100%;
+        }
+    }
