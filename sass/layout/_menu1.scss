@@ -20,8 +20,8 @@ header {
     @include flexwrap();
 
     .photoacc {
-        @include cover();
-        height: 100%;
+        object-fit: cover;
+        height: 300px;
         width: 100%;
     }
 }
@@ -32,7 +32,20 @@ header {
 }
 
 section {
-@include flexwrap();
+    @include blockcolumn();
+
+    .titremenu1 {
+        @include flexwrap();
+        justify-content: space-around;
+
+        h1 {
+            @include flexwrap();
+        }
+
+        i {
+            @include flexwrap();
+        }
+    }
 
     .menus {
         @include flexwrap();
