@@ -4,6 +4,7 @@ header {
     @include flexwrap();
         .title {
             @include flexwrap();
+            background-color: white;
             @include borderbottom;
             .logo {
                 width: 50%;

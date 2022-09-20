@@ -2,6 +2,7 @@
 
 body {
     margin: auto;
+    background-color: rgb(243, 243, 243);
 }
 
 header {
@@ -16,23 +17,25 @@ header {
     }
 }
 
-.accueil {
-    @include flexwrap();
+.menuz {
+    margin-bottom: 20%;
 
-    .photoacc {
-        object-fit: cover;
-        height: 300px;
-        width: 100%;
+    .accueil {
+        @include flexwrap();
+
+        .photoacc {
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
     }
+
 }
 
-
-.menu {
-    background-color: rgb(243, 243, 243);
-}
 
 section {
     @include blockcolumn();
+
 
     .titremenu1 {
         @include flexwrap();
@@ -48,14 +51,23 @@ section {
     }
 
     .menus {
-        @include flexwrap();
-        row-gap: 20px;
+        @include flexcolumn();
+        row-gap: 15px;
 
+
+        .titremenus {
+            @include flexwrap();
+
+            h3 {
+                @include flexwrap();
+            }
+        }
 
         .texte {
             @include flexwrap();
-            gap: 5%;
+            justify-content: space-between;
             background-color: white;
+            width: 290px;
             border-radius: 20px;
             box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
         }
