@@ -1,6 +1,6 @@
 @import "../components/variables";
 
-header {
+header { font-family: roboto;
     @include flexwrap();
         .title {
             @include flexwrap();
@@ -16,7 +16,7 @@ header {
         @include flexwrap();
         background-color: rgb(236, 235, 235);
         gap: 5%;
-        @include borderbottom;
+        font-weight: 700;
     }
 }
     
