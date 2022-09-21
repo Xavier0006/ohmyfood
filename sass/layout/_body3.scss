@@ -39,7 +39,7 @@
                 border-radius: 10px;
             }
 
-            .typo {
+            .typo { 
                 @include flexwrap();
                 justify-content: left;
                 gap: 15%;
@@ -48,12 +48,21 @@
 
             h5 {
                 margin: 0;
+                font-weight: bolder;
+
             }
 
             p {
                 margin: 0;
+
             }
 
+
+            i {
+                position: relative;
+                bottom: 20px;
+                left: 80px;
+            }
         }
     }
 

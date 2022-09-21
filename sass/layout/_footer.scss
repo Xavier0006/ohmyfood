@@ -9,7 +9,7 @@ footer {
     .footer {
         @include blockcolumn();
 
-        .titre-footer {
+        .titre-footer { font-family: shrikhand;
             @include blockcolumn();
             padding-left: 8%;
             

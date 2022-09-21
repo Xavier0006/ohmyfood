@@ -1,5 +1,6 @@
 @charset "UTF-8";
 header {
+  font-family: roboto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,11 +26,11 @@ header .localisation {
   align-items: center;
   background-color: rgb(236, 235, 235);
   gap: 5%;
-  border-bottom-style: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
 }
 
 body {
+  font-family: roboto;
   margin: auto;
 }
 
@@ -104,11 +105,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  font-weight: bolder;
   border-style: none;
   border-radius: 15px;
   background-color: rgb(243, 243, 243);
   width: 90%;
-  gap: 10%;
+  gap: 5%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05);
 }
 .fonctionnement-wrap .liste-fonctionnement .liste .numero {
@@ -120,6 +123,8 @@ body {
   border-radius: 50%;
   background-color: #9356dc;
   color: white;
+  position: relative;
+  right: 10px;
 }
 .fonctionnement-wrap .liste-fonctionnement .liste i {
   color: lightgrey;
@@ -182,9 +187,15 @@ body {
 }
 .article .cards-restaurants .cards h5 {
   margin: 0;
+  font-weight: bolder;
 }
 .article .cards-restaurants .cards p {
   margin: 0;
+}
+.article .cards-restaurants .cards i {
+  position: relative;
+  bottom: 20px;
+  left: 80px;
 }
 
 footer {
@@ -202,6 +213,7 @@ footer .footer {
   justify-content: center;
 }
 footer .footer .titre-footer {
+  font-family: shrikhand;
   display: block;
   flex-direction: column;
   align-items: center;
