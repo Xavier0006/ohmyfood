@@ -129,6 +129,10 @@ body {
 .fonctionnement-wrap .liste-fonctionnement .liste i {
   color: lightgrey;
 }
+.fonctionnement-wrap .liste-fonctionnement .liste .choisir {
+  font-size: 90%;
+  font-weight: 900;
+}
 .fonctionnement-wrap .liste:hover {
   background-color: #dacceb;
   transition: ease-in-out 400ms;
@@ -151,6 +155,10 @@ body {
   align-items: center;
   padding-top: 10%;
   padding-left: 8%;
+}
+.article .cards-wrapper .restaurants-title h4 {
+  font-weight: 900;
+  font-size: larger;
 }
 .article .cards-restaurants {
   display: flex;
@@ -200,6 +208,10 @@ body {
   position: relative;
   bottom: 20px;
   left: 80px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  cursor: pointer;
 }
 
 footer {
