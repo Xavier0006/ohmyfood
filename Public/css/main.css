@@ -129,6 +129,10 @@ body {
 .fonctionnement-wrap .liste-fonctionnement .liste i {
   color: lightgrey;
 }
+.fonctionnement-wrap .liste:hover {
+  background-color: #dacceb;
+  transition: ease-in-out 400ms;
+}
 
 .article {
   display: block;
@@ -272,8 +276,10 @@ footer .liste-footer .end .li-4 {
   }
   body header .localisation {
     margin-bottom: 5%;
-    min-width: 768px;
     gap: 2%;
+  }
+  .fonctionnement-wrap {
+    justify-content: center;
   }
   .article .cards-restaurants {
     row-gap: 2.5rem;
