@@ -338,10 +338,29 @@ footer .liste-footer .end .li-4 {
   body {
     width: 100%;
   }
+  body header .logo {
+    max-width: 700px;
+  }
   body header .localisation {
     margin-bottom: 5%;
     min-width: 1100px;
     gap: 2%;
+  }
+  .fonctionnement-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .article .cards-wrapper {
+    justify-content: center;
+  }
+  .article .cards-wrapper .restaurants-title {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .article .cards-restaurants {
+    padding-bottom: 0;
   }
 }
 body {
