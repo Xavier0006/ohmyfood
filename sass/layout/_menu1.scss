@@ -32,7 +32,6 @@ header {
 
 }
 
-
 section {
     @include blockcolumn();
 
@@ -69,7 +68,32 @@ section {
             background-color: white;
             width: 290px;
             border-radius: 20px;
+            gap: 40%;
             box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
+
+            .boold {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0;
+                font-weight: bold;
+                padding: 5px;
+            }
+
+            .middle {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 5px;
+                font-size: small;
+            }
+
+            .prix {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 5px;
+            }
         }
 
     }
