@@ -1,6 +1,6 @@
 @import "../components/variables";
 
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1100px) {
 
     body {
         width: 100%;
@@ -9,7 +9,7 @@
             
             .localisation {
                 margin-bottom: 5%;
-                min-width: 1920px;
+                min-width: 1100px;
                 gap: 2%;
             }
         }
