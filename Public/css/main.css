@@ -496,6 +496,7 @@ section .menuswrapper .menus .texte .prix {
   align-items: center;
   margin: 0;
   padding: 5px;
+  font-weight: bold;
 }
 
 .commander {
