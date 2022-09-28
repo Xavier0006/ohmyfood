@@ -66,25 +66,22 @@ section {
                 justify-content: center;
                 
                 
+                
 
                 h2 {
                     padding-right: 225px;
                     font-size: medium;
-                    border-bottom-style: solid;
-                    border-bottom-color: rgb(147, 231, 147);
                     margin: 0;
-                    
                 }
 
-
                 h3 {
-                    padding-right: 230px;
+                    padding-right: 240px;
                     font-size: medium;
                     margin: 0;
                 }
 
                 h4 {
-                    padding-right: 200px;
+                    padding-right: 210px;
                     font-size: medium;
                     margin: 0;
                 }
@@ -105,14 +102,14 @@ section {
                     align-items: center;
                     margin: 0;
                     font-weight: bold;
-                    padding: 5px;
+                    padding: 8px;
                 }
 
                 .middle {
                     display: flex;
                     align-items: center;
                     margin: 0;
-                    padding: 5px;
+                    padding: 8px;
                     font-size: small;
                     overflow: auto;
                 }
@@ -121,7 +118,7 @@ section {
                     display: flex;
                     align-items: center;
                     margin: 0;
-                    padding: 5px;
+                    padding: 8px;
                     font-weight: bold;
                 }
             }
@@ -139,4 +136,10 @@ section {
         max-width: 380px;
         box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
     }
+}
+
+@media all and (min-width: 768px) {
+
+
+
 }
