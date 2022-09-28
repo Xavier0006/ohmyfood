@@ -406,6 +406,7 @@ section {
   justify-content: center;
 }
 section .titremenu1 {
+  font-family: shrikhand;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -423,27 +424,46 @@ section .titremenu1 i {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
-section .menus {
+section .menuswrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .menuswrapper .menus {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 15px;
 }
-section .menus .titremenus {
+section .menuswrapper .menus .titremenus {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-}
-section .menus .titremenus h3 {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
-section .menus .texte {
+section .menuswrapper .menus .titremenus h2 {
+  padding-right: 225px;
+  font-size: medium;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(147, 231, 147);
+  margin: 0;
+}
+section .menuswrapper .menus .titremenus h3 {
+  padding-right: 230px;
+  font-size: medium;
+  margin: 0;
+}
+section .menuswrapper .menus .titremenus h4 {
+  padding-right: 200px;
+  font-size: medium;
+  margin: 0;
+}
+section .menuswrapper .menus .texte {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -451,11 +471,11 @@ section .menus .texte {
   justify-content: space-between;
   background-color: white;
   width: 290px;
-  border-radius: 20px;
-  gap: 40%;
+  height: 60px;
+  border-radius: 15px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05);
 }
-section .menus .texte .boold {
+section .menuswrapper .menus .texte .boold {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -463,14 +483,15 @@ section .menus .texte .boold {
   font-weight: bold;
   padding: 5px;
 }
-section .menus .texte .middle {
+section .menuswrapper .menus .texte .middle {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 5px;
   font-size: small;
+  overflow: auto;
 }
-section .menus .texte .prix {
+section .menuswrapper .menus .texte .prix {
   display: flex;
   align-items: center;
   margin: 0;

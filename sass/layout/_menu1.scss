@@ -36,7 +36,7 @@ section {
     @include blockcolumn();
 
 
-    .titremenu1 {
+    .titremenu1 { font-family: shrikhand;
         @include flexwrap();
         justify-content: space-around;
 
@@ -46,56 +46,84 @@ section {
 
         i {
             @include flexwrap();
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
         }
     }
 
-    .menus {
+    .menuswrapper {
         @include flexcolumn();
-        row-gap: 15px;
+        
+        .menus {
+            @include flexcolumn();
+            row-gap: 15px;
 
 
-        .titremenus {
-            @include flexwrap();
+            .titremenus { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
 
-            h3 {
+                h2 {
+                    padding-right: 225px;
+                    font-size: medium;
+                    border-bottom-style: solid;
+                    border-bottom-color: rgb(147, 231, 147);
+                    margin: 0;
+                }
+
+
+                h3 {
+                    padding-right: 230px;
+                    font-size: medium;
+                    margin: 0;
+                }
+
+                h4 {
+                    padding-right: 200px;
+                    font-size: medium;
+                    margin: 0;
+                }
+            }
+
+            .texte {
                 @include flexwrap();
+                justify-content: space-between;
+                background-color: white;
+                width: 290px;
+                height: 60px;
+                border-radius: 15px;
+                box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
+
+                .boold {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 0;
+                    font-weight: bold;
+                    padding: 5px;
+                }
+
+                .middle {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 5px;
+                    font-size: small;
+                    overflow: auto;
+                }
+
+                .prix {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 5px;
+                }
             }
+
         }
-
-        .texte {
-            @include flexwrap();
-            justify-content: space-between;
-            background-color: white;
-            width: 290px;
-            border-radius: 20px;
-            gap: 40%;
-            box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
-
-            .boold {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin: 0;
-                font-weight: bold;
-                padding: 5px;
-            }
-
-            .middle {
-                display: flex;
-                align-items: center;
-                margin: 0;
-                padding: 5px;
-                font-size: small;
-            }
-
-            .prix {
-                display: flex;
-                align-items: center;
-                margin: 0;
-                padding: 5px;
-            }
-        }
-
     }
 }
 
