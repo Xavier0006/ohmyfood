@@ -46,20 +46,21 @@
             }
 
             .typo { 
-                @include flexwrap();
-                justify-content: left;
-                gap: 15%;
-                row-gap: 10px;
+                @include flexcolumn();
+
             }
 
             h5 {
                 margin: 0;
                 font-weight: bolder;
-
+                padding-right: 100px;
+                padding-bottom: 8px;
             }
 
             p {
                 margin: 0;
+                padding-right: 100px;
+                padding-bottom: 8px;
             }
 
 
