@@ -205,12 +205,12 @@ body {
 .article .cards-restaurants .cards h5 {
   margin: 0;
   font-weight: bolder;
-  padding-right: 100px;
+  padding-right: 130px;
   padding-bottom: 8px;
 }
 .article .cards-restaurants .cards p {
   margin: 0;
-  padding-right: 100px;
+  padding-right: 130px;
   padding-bottom: 8px;
 }
 .article .cards-restaurants .cards i {
@@ -414,6 +414,7 @@ section .titremenu1 {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+  font-weight: 100;
 }
 section .titremenu1 h1 {
   display: flex;
@@ -465,10 +466,10 @@ section .menuswrapper .menus .titremenus h4 {
 }
 section .menuswrapper .menus .texte {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
   background-color: white;
   width: 290px;
   height: 60px;
@@ -476,27 +477,22 @@ section .menuswrapper .menus .texte {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05);
 }
 section .menuswrapper .menus .texte .boold {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin: 0;
   font-weight: bold;
-  padding: 8px;
+  padding-right: 70px;
 }
 section .menuswrapper .menus .texte .middle {
-  display: flex;
-  align-items: center;
   margin: 0;
-  padding: 8px;
   font-size: small;
-  overflow: auto;
+  padding-right: 70px;
 }
-section .menuswrapper .menus .texte .prix {
-  display: flex;
-  align-items: center;
+section .menuswrapper .menus .texte h6 {
+  position: absolute;
   margin: 0;
-  padding: 8px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: bolder;
+  bottom: 20px;
+  left: 260px;
 }
 
 .commander {

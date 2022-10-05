@@ -39,6 +39,7 @@ section {
     .titremenu1 { font-family: shrikhand;
         @include flexwrap();
         justify-content: space-around;
+        font-weight: 100;
 
         h1 {
             @include flexwrap();
@@ -55,9 +56,11 @@ section {
     .menuswrapper {
         @include flexcolumn();
         
+        
         .menus {
             @include flexcolumn();
             row-gap: 15px;
+            
 
 
             .titremenus { 
@@ -88,38 +91,33 @@ section {
             }
 
             .texte {
-                @include flexwrap();
-                justify-content: space-between;
+                @include flexcolumn();
+                position: relative;
                 background-color: white;
                 width: 290px;
                 height: 60px;
                 border-radius: 15px;
                 box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
 
-                .boold {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
+                .boold {  
                     margin: 0;
                     font-weight: bold;
-                    padding: 8px;
+                    padding-right: 70px;
                 }
 
                 .middle {
-                    display: flex;
-                    align-items: center;
                     margin: 0;
-                    padding: 8px;
                     font-size: small;
-                    overflow: auto;
+                    padding-right: 70px;
                 }
 
-                .prix {
-                    display: flex;
-                    align-items: center;
+                h6 {
+                    position: absolute;
                     margin: 0;
-                    padding: 8px;
-                    font-weight: bold;
+                    font-size: 13px;
+                    font-weight: bolder;
+                    bottom: 20px;
+                    left: 260px;
                 }
             }
 
