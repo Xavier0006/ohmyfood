@@ -94,6 +94,8 @@ section {
                 @include flexcolumn();
                 position: relative;
                 background-color: white;
+                align-items: start;
+                padding-left: 20px;
                 width: 290px;
                 height: 60px;
                 border-radius: 15px;
@@ -102,13 +104,13 @@ section {
                 .boold {  
                     margin: 0;
                     font-weight: bold;
-                    padding-right: 70px;
+                    padding-right: 80px;
                 }
 
                 .middle {
                     margin: 0;
                     font-size: small;
-                    padding-right: 70px;
+                    padding-right: 90px;
                 }
 
                 h6 {

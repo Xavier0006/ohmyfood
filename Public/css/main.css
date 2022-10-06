@@ -202,15 +202,48 @@ body {
   justify-content: center;
   align-items: center;
 }
-.article .cards-restaurants .cards h5 {
+.article .cards-restaurants .cards .h51 {
   margin: 0;
   font-weight: bolder;
   padding-right: 130px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards p {
+.article .cards-restaurants .cards .p1 {
   margin: 0;
+  padding-right: 140px;
+  padding-bottom: 8px;
+}
+.article .cards-restaurants .cards .h52 {
+  margin: 0;
+  font-weight: bolder;
   padding-right: 130px;
+  padding-bottom: 8px;
+}
+.article .cards-restaurants .cards .p2 {
+  margin: 0;
+  padding-right: 170px;
+  padding-bottom: 8px;
+}
+.article .cards-restaurants .cards .h53 {
+  margin: 0;
+  font-weight: bolder;
+  padding-right: 160px;
+  padding-bottom: 8px;
+}
+.article .cards-restaurants .cards .p3 {
+  margin: 0;
+  padding-right: 170px;
+  padding-bottom: 8px;
+}
+.article .cards-restaurants .cards .h54 {
+  margin: 0;
+  font-weight: bolder;
+  padding-right: 140px;
+  padding-bottom: 8px;
+}
+.article .cards-restaurants .cards .p4 {
+  margin: 0;
+  padding-right: 140px;
   padding-bottom: 8px;
 }
 .article .cards-restaurants .cards i {
@@ -471,6 +504,8 @@ section .menuswrapper .menus .texte {
   align-items: center;
   position: relative;
   background-color: white;
+  align-items: start;
+  padding-left: 20px;
   width: 290px;
   height: 60px;
   border-radius: 15px;
@@ -479,12 +514,12 @@ section .menuswrapper .menus .texte {
 section .menuswrapper .menus .texte .boold {
   margin: 0;
   font-weight: bold;
-  padding-right: 70px;
+  padding-right: 80px;
 }
 section .menuswrapper .menus .texte .middle {
   margin: 0;
   font-size: small;
-  padding-right: 70px;
+  padding-right: 90px;
 }
 section .menuswrapper .menus .texte h6 {
   position: absolute;
