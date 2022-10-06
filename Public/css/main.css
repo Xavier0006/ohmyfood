@@ -518,7 +518,7 @@ section .menuswrapper .menus .texte .boold {
 }
 section .menuswrapper .menus .texte .middle {
   margin: 0;
-  font-size: small;
+  font-size: smaller;
   padding-right: 90px;
 }
 section .menuswrapper .menus .texte h6 {
