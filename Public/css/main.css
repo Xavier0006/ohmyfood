@@ -515,10 +515,11 @@ section .menuswrapper .menus .titremenus h4 {
 }
 section .menuswrapper .menus .texte {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: white;
   align-items: start;
   padding-left: 20px;
@@ -530,27 +531,26 @@ section .menuswrapper .menus .texte {
 section .menuswrapper .menus .texte .boold {
   margin: 0;
   font-weight: bold;
-  padding-right: 80px;
+  padding-top: 10px;
+  height: 20px;
 }
 section .menuswrapper .menus .texte .middle {
   margin: 0;
   font-size: smaller;
-  padding-right: 90px;
+  height: 25px;
 }
-section .menuswrapper .menus .texte h6 {
-  position: absolute;
+section .menuswrapper .menus .texte .thune {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
   margin: 0;
   font-size: 13px;
   font-weight: bolder;
-  bottom: 20px;
-  left: 260px;
+  height: 60px;
 }
 section .menuswrapper .menus .texte .menu-check {
-  position: absolute;
-  bottom: 0px;
-  left: 300px;
-  display: flex;
-  overflow: hidden;
+  display: flex; /* none */
   justify-content: center;
   align-items: center;
   margin: 0%;
@@ -560,7 +560,8 @@ section .menuswrapper .menus .texte .menu-check {
   background-color: #99E2D0;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  transition: 1s;
+  transition: display 1s ease-in-out;
+  cursor: pointer;
 }
 section .menuswrapper .menus .texte .menu-check i {
   transition: all 1s linear;
