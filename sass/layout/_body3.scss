@@ -45,6 +45,23 @@
                 border-radius: 10px;
             }
 
+            .new {
+                display: flex;
+                position: absolute;
+                bottom: 155px;
+                left: 190px;
+                height: 25px;
+                border: rgb(117, 224, 207);
+                background-color: rgb(117, 224, 207);
+                color: rgb(3, 128, 121);
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                font-size: small;
+                font-weight: bold;
+                width: 80px;
+            }
+
             .typo { 
                 @include flexcolumn();
 
