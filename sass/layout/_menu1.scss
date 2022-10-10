@@ -4,6 +4,7 @@
 body {
     margin: auto;
     background-color: rgb(243, 243, 243);
+
     
     header {
         @include flexwrap();
@@ -28,6 +29,7 @@ body {
                 object-fit: cover;
                 height: 300px;
                 width: 100%;
+                
             }
         }
 
@@ -242,6 +244,10 @@ body {
         margin-bottom: 0%;
     }
 
+    .titremenu1 {
+        padding-bottom: 40px;
+    }
+
     .texte {
         width: 500px;
     }
@@ -265,7 +271,7 @@ body {
 
     .commander {
         margin-top: 60px;
-        margin-bottom: -280px;
+        margin-bottom: -180px;
     }
 
 }
