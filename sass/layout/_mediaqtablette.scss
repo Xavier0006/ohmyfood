@@ -14,8 +14,17 @@
         }
     }
 
+    .Reserve {
+        padding-bottom: 80px;
+    }
+
     .fonctionnement-wrap {
         justify-content: center;
+        padding-bottom: 50px;
+
+        .title-fonctionnement {
+            padding-left: 0;
+        }
     }
 
     .article {
@@ -23,6 +32,8 @@
         .cards-restaurants {
             row-gap: 2.5rem;
             justify-content: space-evenly;
+
+
         }
     }
 

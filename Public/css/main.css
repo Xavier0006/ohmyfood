@@ -357,8 +357,15 @@ footer .liste-footer .end .li-4 {
     margin-bottom: 5%;
     gap: 2%;
   }
+  .Reserve {
+    padding-bottom: 80px;
+  }
   .fonctionnement-wrap {
     justify-content: center;
+    padding-bottom: 50px;
+  }
+  .fonctionnement-wrap .title-fonctionnement {
+    padding-left: 0;
   }
   .article .cards-restaurants {
     row-gap: 2.5rem;
@@ -409,6 +416,7 @@ footer .liste-footer .end .li-4 {
   .article .cards-wrapper .restaurants-title {
     padding-top: 0;
     padding-bottom: 30px;
+    padding-left: 0;
   }
   .article .cards-restaurants {
     padding-bottom: 0;
