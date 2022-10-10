@@ -426,60 +426,58 @@ body {
   margin: auto;
   background-color: rgb(243, 243, 243);
 }
-
-header {
+body header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-header .title {
+body header .title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-header .title .logo {
+body header .title .logo {
   width: 50%;
 }
-
-.menuz {
+body .menuz {
   margin-bottom: 20%;
 }
-.menuz .accueil {
+body .menuz .accueil {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.menuz .accueil .photoacc {
+body .menuz .accueil .photoacc {
   object-fit: cover;
   height: 300px;
   width: 100%;
 }
-
-section {
+body section {
   display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-section .titremenu1 {
+body section .titremenu1 {
   font-family: shrikhand;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  font-weight: 100;
+  justify-content: center;
+  font-weight: 50;
+  gap: 95px;
 }
-section .titremenu1 h1 {
+body section .titremenu1 h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-section .titremenu1 i {
+body section .titremenu1 i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -488,77 +486,82 @@ section .titremenu1 i {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-section .menuswrapper {
+body section .menuswrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section .menuswrapper .menus {
+body section .menuswrapper .menus {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 15px;
 }
-section .menuswrapper .menus .titremenus {
+body section .menuswrapper .menus .titremenus {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-section .menuswrapper .menus .titremenus h2 {
+body section .menuswrapper .menus .titremenus h2 {
   padding-right: 225px;
   font-size: medium;
   margin: 0;
 }
-section .menuswrapper .menus .titremenus h3 {
+body section .menuswrapper .menus .titremenus h3 {
   padding-right: 240px;
   font-size: medium;
   margin: 0;
 }
-section .menuswrapper .menus .titremenus h4 {
+body section .menuswrapper .menus .titremenus h4 {
   padding-right: 210px;
   font-size: medium;
   margin: 0;
 }
-section .menuswrapper .menus .texte {
+body section .menuswrapper .menus .texte {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  /*flex-direction: column; */
   background-color: white;
   align-items: start;
-  padding-left: 20px;
   width: 290px;
   height: 60px;
   border-radius: 15px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05);
 }
-section .menuswrapper .menus .texte .boold {
-  margin: 0;
+body section .menuswrapper .menus .texte .block1 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+body section .menuswrapper .menus .texte .block1 .boold {
   font-weight: bold;
-  padding-top: 10px;
-  height: 20px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  padding-top: 5px;
 }
-section .menuswrapper .menus .texte .middle {
-  margin: 0;
+body section .menuswrapper .menus .texte .block1 .middle {
   font-size: smaller;
-  height: 25px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
 }
-section .menuswrapper .menus .texte .thune {
+body section .menuswrapper .menus .texte .thune {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 10px;
-  margin: 0;
   font-size: 13px;
   font-weight: bolder;
-  height: 60px;
+  height: 48px;
 }
-section .menuswrapper .menus .texte .menu-check {
-  display: flex; /* none */
+body section .menuswrapper .menus .texte .menu-check {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0%;
@@ -568,21 +571,58 @@ section .menuswrapper .menus .texte .menu-check {
   background-color: #99E2D0;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  transition: display 1s ease-in-out;
-  cursor: pointer;
+  /* cursor: pointer; */
+  transition: width 1s ease-in-out;
 }
-section .menuswrapper .menus .texte .menu-check i {
-  transition: all 1s linear;
+body section .menuswrapper .menus .texte .menu-check i {
+  display: flex;
   font-size: 1rem;
   background: white;
   border-radius: 50%;
-  transform: rotate(0deg);
-}
-section .menuswrapper .menus .texte .menu-check .menu-check:hover {
-  width: 30%;
+  color: #99E2D0;
+  /*animation: rotationReverse 1s ease-in-out; */
+  overflow: hidden;
+  transition: transform 1s ease-in-out;
   transform: rotate(180deg);
 }
+body section .menuswrapper .menus .texte .menu-check i::after {
+  content: "";
+  position: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+body section .menuswrapper .menus .texte:hover .menu-check {
+  width: 70px;
+}
+body section .menuswrapper .menus .texte:hover i {
+  transform: rotate(0deg);
+  /*animation: rotation 1s ease-in-out; */
+}
+body section .menuswrapper .menus .texte:hover .block1 {
+  width: 170px;
+}
 
+/* @keyframes rotation {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+    @keyframes rotationReverse {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+
+  } */
 .commander {
   display: flex;
   flex-wrap: wrap;
