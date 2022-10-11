@@ -177,7 +177,7 @@ body {
   padding-bottom: 10%;
   justify-content: space-evenly;
 }
-.article .cards-restaurants .cards {
+.article .cards-restaurants a .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -189,23 +189,15 @@ body {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05);
   position: relative;
   cursor: pointer;
-  /* .link {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 200000;
-  } */
 }
-.article .cards-restaurants .cards .photos {
+.article .cards-restaurants a .cards .photos {
   object-fit: cover;
   width: 300px;
   height: 130px;
   padding-bottom: 10px;
   border-radius: 10px;
 }
-.article .cards-restaurants .cards .new {
+.article .cards-restaurants a .cards .new {
   display: flex;
   position: absolute;
   bottom: 155px;
@@ -221,57 +213,57 @@ body {
   font-weight: bold;
   width: 80px;
 }
-.article .cards-restaurants .cards .typo {
+.article .cards-restaurants a .cards .typo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.article .cards-restaurants .cards .h51 {
+.article .cards-restaurants a .cards .h51 {
   margin: 0;
   font-weight: bolder;
   padding-right: 130px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards .p1 {
+.article .cards-restaurants a .cards .p1 {
   margin: 0;
   padding-right: 140px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards .h52 {
+.article .cards-restaurants a .cards .h52 {
   margin: 0;
   font-weight: bolder;
   padding-right: 130px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards .p2 {
+.article .cards-restaurants a .cards .p2 {
   margin: 0;
   padding-right: 170px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards .h53 {
+.article .cards-restaurants a .cards .h53 {
   margin: 0;
   font-weight: bolder;
   padding-right: 160px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards .p3 {
+.article .cards-restaurants a .cards .p3 {
   margin: 0;
   padding-right: 170px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards .h54 {
+.article .cards-restaurants a .cards .h54 {
   margin: 0;
   font-weight: bolder;
   padding-right: 140px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards .p4 {
+.article .cards-restaurants a .cards .p4 {
   margin: 0;
   padding-right: 140px;
   padding-bottom: 8px;
 }
-.article .cards-restaurants .cards i {
+.article .cards-restaurants a .cards i {
   position: absolute;
   bottom: 20px;
   left: 250px;
@@ -282,7 +274,7 @@ body {
   -webkit-text-stroke-color: black;
   cursor: pointer;
 }
-.article .cards-restaurants .cards i:hover {
+.article .cards-restaurants a .cards i:hover {
   transition: all 3s ease-in-out;
   background-position: 20px 50px;
   background-image: linear-gradient(60deg, #9356DC, #FF79DA);
@@ -543,21 +535,33 @@ body section .menuswrapper .menus .titremenus {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 body section .menuswrapper .menus .titremenus h2 {
-  padding-right: 225px;
+  padding-right: 210px;
   font-size: medium;
   margin: 0;
 }
 body section .menuswrapper .menus .titremenus h3 {
-  padding-right: 240px;
+  padding-right: 230px;
   font-size: medium;
   margin: 0;
 }
 body section .menuswrapper .menus .titremenus h4 {
-  padding-right: 210px;
+  padding-right: 200px;
   font-size: medium;
   margin: 0;
+}
+body section .menuswrapper .menus .titremenus::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  border-bottom: solid;
+  border-color: #99E2D0;
+  bottom: -5px;
+  left: 0px;
 }
 body section .menuswrapper .menus .texte {
   display: flex;
@@ -610,8 +614,6 @@ body section .menuswrapper .menus .texte .menu-check {
   height: 60px;
   border: #99E2D0;
   background-color: #99E2D0;
-  /* border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px; */
   transition: width 1s ease-in-out;
 }
 body section .menuswrapper .menus .texte .menu-check i {
@@ -634,7 +636,7 @@ body section .menuswrapper .menus .texte .menu-check i::after {
   transition: transform 1s ease-in-out;
 }
 body section .menuswrapper .menus .texte:hover .menu-check {
-  width: 55px;
+  width: 40px;
 }
 body section .menuswrapper .menus .texte:hover i {
   transform: rotate(0deg);

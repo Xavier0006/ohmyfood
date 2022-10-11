@@ -91,27 +91,38 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
-
+                    position: relative;
 
 
                     h2 {
-                        padding-right: 225px;
+                        padding-right: 210px;
                         font-size: medium;
                         margin: 0;
                     }
 
                     h3 {
-                        padding-right: 240px;
+                        padding-right: 230px;
                         font-size: medium;
                         margin: 0;
                     }
 
                     h4 {
-                        padding-right: 210px;
+                        padding-right: 200px;
                         font-size: medium;
                         margin: 0;
                     }
+                }
+
+                .titremenus::after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 30px;
+                    height: 3px;
+                    border-bottom: solid;
+                    border-color: #99E2D0;
+                    bottom: -5px;
+                    left: 0px;
                 }
 
                 .texte {
@@ -175,8 +186,6 @@ body {
                         height: 60px;
                         border: #99E2D0;
                         background-color: #99E2D0;
-                       /* border-bottom-right-radius: 15px;
-                        border-top-right-radius: 15px; */
                         transition: width 1s ease-in-out;
                         
                
@@ -207,7 +216,7 @@ body {
                     }
 
                     &:hover .menu-check {
-                        width: 55px;
+                        width: 40px;
                     }
 
                     &:hover i {

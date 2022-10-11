@@ -30,124 +30,122 @@
         padding-bottom: 10%;
         justify-content: space-evenly;
 
-        .cards {
-            @include flexwrap();
-            gap: 5%;
-            background-color: white;
-            border-radius: 5%;
-            max-width: 280px;
-            box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
-            position: relative;
-            cursor: pointer;
-
-            /* .link {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                z-index: 200000;
-            } */
-
-            .photos {
-                @include cover();
-                padding-bottom: 10px;
-                border-radius: 10px;
-            }
-
-            .new {
-                display: flex;
-                position: absolute;
-                bottom: 155px;
-                left: 190px;
-                height: 25px;
-                border: rgb(117, 224, 207);
-                background-color: rgb(117, 224, 207);
-                color: rgb(3, 128, 121);
-                justify-content: center;
-                align-items: center;
-                margin: 0;
-                font-size: small;
-                font-weight: bold;
-                width: 80px;
-            }
-
-            .typo { 
-                @include flexcolumn();
-
-            }
-
-            .h51 {
-                margin: 0;
-                font-weight: bolder;
-                padding-right: 130px;
-                padding-bottom: 8px;
-            }
-
-            .p1 {
-                margin: 0;
-                padding-right: 140px;
-                padding-bottom: 8px;
-            }
+        a {
+            
 
 
-            .h52 {
-                margin: 0;
-                font-weight: bolder;
-                padding-right: 130px;
-                padding-bottom: 8px;
-            }
-
-            .p2 {
-                margin: 0;
-                padding-right: 170px;
-                padding-bottom: 8px;
-            }
-
-            .h53 {
-                margin: 0;
-                font-weight: bolder;
-                padding-right: 160px;
-                padding-bottom: 8px;
-            }
-
-            .p3 {
-                margin: 0;
-                padding-right: 170px;
-                padding-bottom: 8px;
-            }
-
-            .h54 {
-                margin: 0;
-                font-weight: bolder;
-                padding-right: 140px;
-                padding-bottom: 8px;
-            }
-
-            .p4 {
-                margin: 0;
-                padding-right: 140px;
-                padding-bottom: 8px;
-            }
-
-            i {
-                position: absolute;
-                bottom: 20px;
-                left: 250px;
-                background-position: 50px 20px;
-                background-image: linear-gradient(45deg, white,white);
-                -webkit-text-fill-color: transparent;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: black;
+            .cards {
+                @include flexwrap();
+                gap: 5%;
+                background-color: white;
+                border-radius: 5%;
+                max-width: 280px;
+                box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
+                position: relative;
                 cursor: pointer;
-            }
 
-            i:hover {
-                transition: all 3s ease-in-out;
-                background-position: 20px 50px;
-                background-image: linear-gradient(60deg, #9356DC, #FF79DA );
-                background-clip: text;
-                -webkit-background-clip: text;
+
+
+                .photos {
+                    @include cover();
+                    padding-bottom: 10px;
+                    border-radius: 10px;
+                }
+
+                .new {
+                    display: flex;
+                    position: absolute;
+                    bottom: 155px;
+                    left: 190px;
+                    height: 25px;
+                    border: rgb(117, 224, 207);
+                    background-color: rgb(117, 224, 207);
+                    color: rgb(3, 128, 121);
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                    font-size: small;
+                    font-weight: bold;
+                    width: 80px;
+                }
+
+                .typo {
+                    @include flexcolumn();
+
+                }
+
+                .h51 {
+                    margin: 0;
+                    font-weight: bolder;
+                    padding-right: 130px;
+                    padding-bottom: 8px;
+                }
+
+                .p1 {
+                    margin: 0;
+                    padding-right: 140px;
+                    padding-bottom: 8px;
+                }
+
+
+                .h52 {
+                    margin: 0;
+                    font-weight: bolder;
+                    padding-right: 130px;
+                    padding-bottom: 8px;
+                }
+
+                .p2 {
+                    margin: 0;
+                    padding-right: 170px;
+                    padding-bottom: 8px;
+                }
+
+                .h53 {
+                    margin: 0;
+                    font-weight: bolder;
+                    padding-right: 160px;
+                    padding-bottom: 8px;
+                }
+
+                .p3 {
+                    margin: 0;
+                    padding-right: 170px;
+                    padding-bottom: 8px;
+                }
+
+                .h54 {
+                    margin: 0;
+                    font-weight: bolder;
+                    padding-right: 140px;
+                    padding-bottom: 8px;
+                }
+
+                .p4 {
+                    margin: 0;
+                    padding-right: 140px;
+                    padding-bottom: 8px;
+                }
+
+                i {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 250px;
+                    background-position: 50px 20px;
+                    background-image: linear-gradient(45deg, white, white);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: black;
+                    cursor: pointer;
+                }
+
+                i:hover {
+                    transition: all 3s ease-in-out;
+                    background-position: 20px 50px;
+                    background-image: linear-gradient(60deg, #9356DC, #FF79DA);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
             }
         }
     }
