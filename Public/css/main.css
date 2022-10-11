@@ -177,6 +177,11 @@ body {
   padding-bottom: 10%;
   justify-content: space-evenly;
 }
+.article .cards-restaurants a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
 .article .cards-restaurants a .cards {
   display: flex;
   flex-wrap: wrap;
