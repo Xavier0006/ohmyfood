@@ -4,6 +4,9 @@ footer {
     @include blockcolumn();
     background-color: rgba(14, 11, 11, 0.753);
     color: white;
+    justify-content: left;
+    padding-left: 30px;
+    
 
     
     .footer {
@@ -11,22 +14,28 @@ footer {
 
         .titre-footer { font-family: shrikhand;
             @include blockcolumn();
-            padding-left: 8%;
+            padding-top: 20px;
+            padding-bottom: 20px;
             
             h5 {
                 margin: 0;
+                font-size: medium;
+                font-weight: 100;
             }
         }
     }
 
     .liste-footer {
         @include flexrow();
+        justify-content: left;
 
         .end {
             @include blockcolumn();
 
             .li-1 {
                 @include flexrowstart();
+                cursor: pointer;
+                height: 30px;
                 
                 i {
                     padding-right: 10px;
@@ -35,6 +44,8 @@ footer {
 
             .li-2 {
                 @include flexrowstart();
+                cursor: pointer;
+                height: 30px;
                 i {
                     padding-right: 10px;
                 }
@@ -42,10 +53,15 @@ footer {
 
             .li-3 {
                 @include flexrowstart();
+                cursor: pointer;
+                height: 30px;
             }
 
             .li-4 {
                 @include flexrowstart();
+                cursor: pointer;
+                height: 30px;
+                padding-bottom: 20px;
             }
         }
     }

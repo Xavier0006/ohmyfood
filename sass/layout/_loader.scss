@@ -1,12 +1,13 @@
 @import "../components/variables";
 
 .loaderstarter {
-    backdrop-filter: blur(3px);
-
-    z-index: 100000;
-    height: 600px;
-    width: 600px;
-    background-color: #121212;
+    position: fixed;
+    z-index: -5;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    animation: starter 3s;
+    visibility: hidden;
 }
 
 .loader {
@@ -17,16 +18,12 @@
     width: 300px;
     height: 300px;
     box-sizing: border-box;
-    background: rgba(0,0,0,0);
-    z-index: 20;
 }
 
 .loader .face {
     position: absolute;
     border: 2px solid #121212;
 }
-
-
 
 .loader .face.face {
     top: 30px;
@@ -38,7 +35,7 @@
     border-radius: 50%;
     border-right: 2px solid #99E2D0;
     border-bottom: 2px solid rgb(255, 121, 218);
-    animation: anime 3s linear reverse infinite;
+    animation: anime 3s linear;
 }
 
 .loader .face .circle {
@@ -85,4 +82,14 @@
         transform: rotate(360deg);
     }
     
+}
+
+@keyframes starter {
+    0% {
+        z-index: 1000000;
+        visibility: visible;
+    }
+    100% {
+        
+    }
 }

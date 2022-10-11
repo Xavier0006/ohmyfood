@@ -9,8 +9,20 @@ body {
     header {
         @include flexwrap();
 
+
         .title {
             @include flexwrap();
+            position: relative;
+
+            a {
+                position: absolute;
+                left: 5%;
+
+                i {
+                    color:rgba(14, 11, 11, 0.753);
+                    font-size: large;
+                }
+            }
 
             .logo {
                 width: 50%;
@@ -38,6 +50,7 @@ body {
     section {
         @include blockcolumn();
 
+
         .titremenu1 {
             font-family: shrikhand;
             @include flexrow();
@@ -45,11 +58,12 @@ body {
             font-weight: 50;
             gap: 95px;
             position: relative;
-            top: -70px;
+            top: -40px;
             z-index: 999;
             background-color: rgb(243, 243, 243);
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
+            padding-bottom: 0;
 
             h1 {
                 @include flexwrap();
@@ -103,7 +117,6 @@ body {
                 .texte {
                     display: flex;
                     justify-content: space-between;
-                    /*flex-direction: column; */
                     background-color: white;
                     align-items: start;
                     width: 290px;
@@ -111,6 +124,7 @@ body {
                     border-radius: 15px;
                     box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%), 0 8px 8px rgb(0 0 0 / 5%), 0 16px 16px rgb(0 0 0 / 5%);
                     cursor: pointer;
+                    overflow: hidden;
 
 
                     .block1 {
@@ -161,10 +175,11 @@ body {
                         height: 60px;
                         border: #99E2D0;
                         background-color: #99E2D0;
-                        border-bottom-right-radius: 15px;
-                        border-top-right-radius: 15px;
+                       /* border-bottom-right-radius: 15px;
+                        border-top-right-radius: 15px; */
                         transition: width 1s ease-in-out;
-
+                        
+               
 
 
                         i {
@@ -173,7 +188,6 @@ body {
                             background: white;
                             border-radius: 50%;
                             color: #99E2D0;
-                            /*animation: rotationReverse 1s ease-in-out; */
                             overflow: hidden;
                             transition: transform 1s ease-in-out;
                             transform: rotate(180deg);
@@ -181,7 +195,7 @@ body {
 
                         i::after {
                             content: "";
-                            position: flex;
+                            display: flex;
                             top: 0;
                             left: 0;
                             width: 100%;
@@ -193,12 +207,11 @@ body {
                     }
 
                     &:hover .menu-check {
-                        width: 70px;
+                        width: 55px;
                     }
 
                     &:hover i {
                         transform: rotate(0deg);
-                        /*animation: rotation 1s ease-in-out; */
                     } 
 
                     &:hover .block1 {
@@ -213,25 +226,6 @@ body {
     }
 
 }
-
-/* @keyframes rotation {
-    from {
-      transform: rotate(180deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-    @keyframes rotationReverse {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(180deg);
-    }
-
-  } */
 
 .commander {
     @include flexwrap();
