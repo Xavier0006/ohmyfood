@@ -528,6 +528,7 @@ body section .menuswrapper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: show 1.5s ease-out;
 }
 body section .menuswrapper .menus {
   display: flex;
@@ -650,6 +651,16 @@ body section .menuswrapper .menus .texte:hover .block1 {
   width: 170px;
 }
 
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .commander {
   display: flex;
   flex-wrap: wrap;
