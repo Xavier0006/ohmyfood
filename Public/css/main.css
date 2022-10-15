@@ -374,6 +374,9 @@ footer .liste-footer .end .li-4 {
   body {
     width: 100%;
   }
+  body header .navbar .logo {
+    max-width: 15%;
+  }
   body header .navbar .localisation {
     margin-bottom: 5%;
     gap: 2%;
@@ -418,7 +421,7 @@ footer .liste-footer .end .li-4 {
     width: 100%;
   }
   body header .logo {
-    max-width: 700px;
+    max-width: 20%;
   }
   body header .localisation {
     margin-bottom: 5%;
@@ -643,13 +646,13 @@ body section .menuswrapper .menus .texte .menu-check i::after {
   transition: transform 1s ease-in-out;
 }
 body section .menuswrapper .menus .texte:hover .menu-check {
-  width: 40px;
+  width: 50px;
 }
 body section .menuswrapper .menus .texte:hover i {
   transform: rotate(0deg);
 }
 body section .menuswrapper .menus .texte:hover .block1 {
-  width: 170px;
+  width: 180px;
 }
 
 @keyframes show {
@@ -689,10 +692,25 @@ body section .menuswrapper .menus .texte:hover .block1 {
   .titremenu1 {
     padding-bottom: 40px;
   }
-  .texte {
-    width: 500px;
+  .menus .titremenus {
+    padding-right: 205px;
   }
-  .commander {
+  .menus .texte {
+    min-width: 500px;
+  }
+  .menus .texte .block1 {
+    min-width: 250px;
+  }
+  .menus .texte .block1 .boold {
+    padding-left: 15px !important;
+  }
+  .menus .texte .block1 .middle {
+    padding-left: 15px !important;
+  }
+  .menus .texte .thune {
+    padding-left: 90px;
+  }
+  .menus .commander {
     margin-top: 80px;
     margin-bottom: -80px;
   }
@@ -701,8 +719,23 @@ body section .menuswrapper .menus .texte:hover .block1 {
   .menuz {
     margin-bottom: 0%;
   }
-  .texte {
-    width: 600px;
+  .menus .titremenus {
+    padding-right: 300px;
+  }
+  .menus .texte {
+    min-width: 600px;
+  }
+  .menus .texte .block1 {
+    min-width: 300px;
+  }
+  .menus .texte .block1 .boold {
+    padding-left: 25px !important;
+  }
+  .menus .texte .block1 .middle {
+    padding-left: 25px !important;
+  }
+  .menus .texte .thune {
+    padding-left: 120px;
   }
   .commander {
     margin-top: 60px;
