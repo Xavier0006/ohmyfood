@@ -16,7 +16,7 @@ header {
             @include borderbottom;
 
             .logo {
-                width: 50%;
+                max-width: 150px;
                 padding: 3% 0% 3% 0%;
             }
         }

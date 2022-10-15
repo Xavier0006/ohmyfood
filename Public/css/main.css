@@ -23,7 +23,7 @@ header .navbar .title {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 header .navbar .title .logo {
-  width: 50%;
+  max-width: 150px;
   padding: 3% 0% 3% 0%;
 }
 header .navbar .localisation {
@@ -392,8 +392,8 @@ footer .liste-footer .end .li-4 {
     padding-left: 0;
   }
   .article .cards-restaurants {
-    row-gap: 2.5rem;
-    justify-content: space-evenly;
+    gap: 95px;
+    justify-content: center;
   }
   .footer {
     margin-top: 5%;
@@ -444,6 +444,8 @@ footer .liste-footer .end .li-4 {
   }
   .article .cards-restaurants {
     padding-bottom: 0;
+    gap: 10px;
+    justify-content: space-evenly;
   }
 }
 body {
