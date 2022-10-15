@@ -378,7 +378,6 @@ footer .liste-footer .end .li-4 {
     max-width: 15%;
   }
   body header .navbar .localisation {
-    margin-bottom: 5%;
     gap: 2%;
   }
   .Reserve {
@@ -424,7 +423,6 @@ footer .liste-footer .end .li-4 {
     max-width: 20%;
   }
   body header .localisation {
-    margin-bottom: 5%;
     min-width: 1100px;
     gap: 2%;
   }
